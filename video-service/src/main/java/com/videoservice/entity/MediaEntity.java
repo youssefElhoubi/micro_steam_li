@@ -1,4 +1,4 @@
-package com.videoservice.service;
+package com.videoservice.entity;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import lombok.*;
