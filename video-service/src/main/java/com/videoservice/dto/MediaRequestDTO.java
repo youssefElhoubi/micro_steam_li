@@ -3,9 +3,7 @@ import jakarta.validation.constraints.*;
 import lombok.Data;
 
 @Data
-public class MediaDTO {
-
-    private String id;
+public class MediaRequestDTO {
 
     @NotBlank(message = "Title cannot be empty")
     private String title;
