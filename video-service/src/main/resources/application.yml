@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: video-service # "Hi, my name is video-service"
+  config:
+    import: "optional:configserver:http://localhost:8888" # "I am going to get my settings from here"

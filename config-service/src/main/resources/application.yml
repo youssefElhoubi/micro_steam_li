@@ -1,11 +1,14 @@
+server:
+  port: 8888
+
 spring:
   application:
     name: config-server
+  profiles:
+    active: native
   cloud:
     config:
       server:
-        git:
-          uri: https://github.com/youssefElhoubi/micro_steam_li
-          search-paths: config-service
-server:
-  port: 8080
+        native:
+          # Now it ONLY looks inside this folder for client configs
+          search-locations: classpath:/config-repo/

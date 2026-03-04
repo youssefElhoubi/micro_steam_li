@@ -1,0 +1,12 @@
+server:
+  port: 8081 # The port the video-service will actually run on
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/video_db # The database connection
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8087/eureka/ # "Hey video-service, after you start, go register yourself in this phonebook"
